@@ -5,7 +5,10 @@ try:
     val = file.read()
     v = int(val[:-1])
     v= v+20
-    file.write(str(v))
+    if v<850:
+        file.write(str(v))
+    else:
+        file.write("850")
     file.close()
 
 except:
